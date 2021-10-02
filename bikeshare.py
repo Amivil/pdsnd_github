@@ -9,7 +9,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
 print (CITY_DATA.keys())
 cities=['chicago','new york','washington','texas']
 meses=['january', 'february', 'march', 'april', 'may', 'june','jul']
-days=['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+days=['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'sat']
 
 def get_filters():
     """
