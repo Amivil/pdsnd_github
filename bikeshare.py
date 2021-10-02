@@ -49,7 +49,7 @@ def get_filters():
            
     
     # TO DO: get user input for month (all, january, february, ... , june)
-    
+    #Documentation of months
     while True:
         month=input('Input for month (all, january, february, ... , june\n> {}  \n>'.format(meses))
         if month.casefold() in meses:
