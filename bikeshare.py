@@ -1,7 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
-
+#city_data include names of cities format csv
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -127,6 +127,7 @@ def time_stats(df):
 
     # TO DO: display the most common start hour
     #commonhour = df['hour'].mode().reset_index()
+    #the function mode is using for calculate the most common 
     print('The most common start hour is : ', df['hour'].mode().values[0] )
 
 
