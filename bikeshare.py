@@ -7,9 +7,9 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 
 print (CITY_DATA.keys())
-cities=['chicago','new york','washington','texas']
-meses=['january', 'february', 'march', 'april', 'may', 'june','jul']
-days=['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'sat']
+cities=['chicago','new york','washington','Los angeles','houston']
+meses=['january', 'february', 'march', 'april', 'may', 'june']
+days=['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
 
 def get_filters():
     """
@@ -29,7 +29,7 @@ def get_filters():
 #          #city = raw_input('user input for city (chicago, new york city, washington)    \n>  ').lower()
 #          if city in cities :
 #             break
-    
+#	Change the condition of while    
     while True:
         city = input('Which of these cities do you want to explore : Chicago, New York or Washington?  \n> {} \n> '.format(cities))
 
