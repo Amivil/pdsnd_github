@@ -92,7 +92,7 @@ def load_data(city,month,day):
     df['hour'] = df['Start Time'].dt.hour                                
     #print(df['month'].mode().values )
     #print(df['day_of_week'].mode().values )
-    #the function mode generate the common value of month, day
+    # the function mode generate the common value of month, day
 #     if month != 'all':
 #         month =  meses.index(month) + 1
 #         df= df[df['month'] == month]
