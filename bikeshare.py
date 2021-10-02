@@ -7,7 +7,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'washington': 'washington.csv' }
 
 print (CITY_DATA.keys())
-cities=['chicago','new york','washington','los angeles']
+cities=['chicago','new york','washington','Los angeles','houston']
 meses=['january', 'february', 'march', 'april', 'may', 'june']
 days=['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
 
