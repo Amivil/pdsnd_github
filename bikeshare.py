@@ -1,14 +1,14 @@
 import time
 import pandas as pd
 import numpy as np
-#city_data include names of cities format csv
+
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
 print (CITY_DATA.keys())
-cities=['chicago','new york','washington','Los angeles','houston']
-meses=['january', 'february', 'march', 'april', 'may', 'june']
+cities=['chicago','new york','washington']
+meses=['january', 'february', 'march', 'april', 'may', 'june','jul','aug']
 days=['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
 
 def get_filters():
@@ -29,7 +29,7 @@ def get_filters():
 #          #city = raw_input('user input for city (chicago, new york city, washington)    \n>  ').lower()
 #          if city in cities :
 #             break
-#	Change the condition of while    
+    
     while True:
         city = input('Which of these cities do you want to explore : Chicago, New York or Washington?  \n> {} \n> '.format(cities))
 
@@ -39,7 +39,7 @@ def get_filters():
             print('City is not permited')
 
        
-    if city==cities[2]:
+    if city==cities['washington']:
         print("Looks like you want to hear about washington! if this is not true. Restart the program now!")
         while True:            
             restart = input('\nWould you like to restart? Enter yes or no.\n')
@@ -49,7 +49,7 @@ def get_filters():
            
     
     # TO DO: get user input for month (all, january, february, ... , june)
-    #Documentation of months
+    
     while True:
         month=input('Input for month (all, january, february, ... , june\n> {}  \n>'.format(meses))
         if month.casefold() in meses:
@@ -92,7 +92,7 @@ def load_data(city,month,day):
     df['hour'] = df['Start Time'].dt.hour                                
     #print(df['month'].mode().values )
     #print(df['day_of_week'].mode().values )
-    
+    #the function mode generate the common value of month, day
 #     if month != 'all':
 #         month =  meses.index(month) + 1
 #         df= df[df['month'] == month]
@@ -127,7 +127,6 @@ def time_stats(df):
 
     # TO DO: display the most common start hour
     #commonhour = df['hour'].mode().reset_index()
-    #the function mode is using for calculate the most common 
     print('The most common start hour is : ', df['hour'].mode().values[0] )
 
 
