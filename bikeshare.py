@@ -1,7 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
-
+#city_data include names of cities format csv
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york': 'new_york_city.csv',
               'washington': 'washington.csv' }
@@ -29,7 +29,7 @@ def get_filters():
 #          #city = raw_input('user input for city (chicago, new york city, washington)    \n>  ').lower()
 #          if city in cities :
 #             break
-    
+#	Change the condition of while    
     while True:
         city = input('Which of these cities do you want to explore : Chicago, New York or Washington?  \n> {} \n> '.format(cities))
 
@@ -49,7 +49,7 @@ def get_filters():
            
     
     # TO DO: get user input for month (all, january, february, ... , june)
-    
+    #Documentation of months
     while True:
         month=input('Input for month (all, january, february, ... , june\n> {}  \n>'.format(meses))
         if month.casefold() in meses:
